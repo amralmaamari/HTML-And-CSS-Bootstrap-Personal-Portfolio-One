@@ -1,0 +1,359 @@
+:root{
+    --color-green:#00D26D;
+    --color-black:#212529;
+    --color-whiteSmoke:#F9F8F8;
+    --color-blue:#2E89FC;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main-section{
+    background-image: url(images/Background.png);
+    background-size: cover;
+}
+.main-section::-webkit-scrollbar{
+    width: 10px;
+}
+.main-section::-webkit-scrollbar-track{
+    background-color: white;
+}
+.main-section::-webkit-scrollbar-thumb{
+    background-color: rgb(68, 69, 71);
+}
+.main-section .nav-item a{
+    transition: 0.3s;
+}
+.main-section .nav-item a:hover{
+    text-decoration: underline !important; 
+}
+
+/* See the code and do CLasses and But on Html */
+
+
+@media (min-width:991px) {
+    .main-section .services-btn::after{
+        content: none !important;
+    }
+    .main-section .dropdown-menu {
+        background-color: white !important;
+    }
+    .main-section .dropdown-menu li a{
+        color: black !important;
+        text-align: center !important;
+    }
+    .main-section .dropdown-menu li a:hover{
+        text-decoration: none !important; 
+        background-color: var(--color-green,#00D26D) !important;
+        color: white !important;
+        
+    }
+    .main-section .nav-item a{
+        font-size: 1.25rem !important;
+    }
+    
+}
+
+/* .main-section .dropdown-menu{
+    color: transparent;
+} */
+
+.main-section .dropdown-menu li a{
+    color: white;
+    text-align: start;
+}
+
+.main-section .dropdown-menu li a:hover{
+    text-decoration: none !important;
+    background-color: transparent ;
+}
+
+.main-section .dropdown-menu{
+    width: 251px !important;
+    left: -100px !important;
+}
+
+
+.navbar-toggler:focus {
+    box-shadow: none !important;
+}
+
+/* Start hero */
+.main-section .hero h1{
+    font-size: 4rem;
+}
+.main-section .hero h1 span{
+    color: var(--color-green);
+}
+.main-section .hero p{
+    width: 500px !important;
+    font-size: 1.3rem !important;
+}
+/* End hero */
+
+/* Start scewd */
+.scewd{
+    background-color: rgb(255, 255, 255);
+    height:25vh;
+    transform:skewY(5deg);
+    position: absolute;
+    top: 39rem;
+}
+
+/* End scewd */
+
+/* Start Card-Container */
+.card-container{
+    top: -70px;
+}
+.card-container .img {
+    background-color: var(--color-green);
+    width: 120px;
+    height: 120px;
+    padding: 12px;
+
+}
+
+.card-container .text h3{
+    color: var(--color-black);
+}
+
+/* End Card-Container */
+
+/* Start Brands */
+.brands h2{
+    color: var(--color-green);
+}
+/* End Brands */
+
+/* Start jumbo */
+.jumbo{
+    background-image: url(images/savingnations-mobile.png);
+    background-size:cover;
+    background-position: center ;
+}
+.jumbo .text{
+    transform: translateY(-50%);
+}
+.jumbo .text h2{
+    font-size: 2rem;
+}
+
+@media (min-width:576px) {
+    .jumbo{
+        background-image: url(images/savingthenations.png);
+    }
+    
+}
+@media (min-width:991px) {
+    .jumbo .text h2{
+        font-size: 4rem;
+    }
+    .jumbo .text{
+        width: 50% !important;
+    }
+}
+/* End jumbo */
+
+/* Start columns-skewd */
+.columns-skewd button{
+    border-color: var(--color-blue) !important;
+    color: var(--color-blue) !important;
+}
+.columns-skewd .text{
+    width: 90%;
+}
+.columns-skewd .text h4{
+    color: var(--color-blue) !important;
+}
+@media (min-width:991px) {
+    .columns-skewd .wrapper:last-child{
+        margin-top: 276px;
+    }
+}
+/* End columns-skewd */
+
+/* Start viedo */
+@media (min-width:991px) {
+    .viedo iframe{
+        width: 59.0625rem;
+        height: 36.6875rem;
+    }
+    .viedo .text{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background-color: var(--color-whiteSmoke) !important;
+        width: 50%;
+        padding: 60px 19px;
+    }
+    .viedo .text q{
+        font-size: 25px;
+        font-weight: bold;
+    }
+    .viedo .text .author{
+        padding-left: 24px;
+    }
+    .viedo button{
+        border-color: #65a1fc !important;
+        color: white !important;
+        background-color: #65a1fc !important;
+        display: block;
+        position: absolute;
+        right: 50%;
+        bottom: 0px;
+        z-index: 1;
+        padding: 24px 101px !important;
+        font-size: 20px !important;
+        text-decoration: underline !important;
+        font-weight: bolder !important;
+    
+    }
+}
+@media (max-width:991px) {
+    .viedo iframe{
+        width: 30rem;
+        height: 20rem;
+    }
+    .viedo .text{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-color: var(--color-whiteSmoke) !important;
+        width: 54%;
+        padding: 16px 19px;
+    }
+    .viedo .text q{
+        font-size: 15px;
+        font-weight: bold;
+    }
+    .viedo .text .author{
+        padding-left: 24px;
+    }
+    .viedo button{
+    border-color: #65a1fc !important;
+    color: white !important;
+    background-color: #65a1fc !important;
+    display: block;
+    position: absolute;
+    right: 16%;
+    bottom: 0px;
+    z-index: 1;
+    padding: 22px 56px !important;
+    font-size: 20px !important;
+    text-decoration: underline !important;
+    font-weight: bolder !important;
+}
+.viedo button::before{
+    content: "\f061";
+    font-family:"Font Awesome 5 Free";
+    position: absolute;
+    top: 50%;
+    right: 38px;
+    font-weight: bolder;
+    font-size: 15px !important;
+    transform: translateY(-50%);
+
+
+}
+.viedo .text .author{
+    padding-bottom: 12px !important;
+}
+}
+
+/* End viedo */
+
+/* Start News */
+.news button{
+    border-color: var(--color-green) !important;
+    color: var(--color-green) !important;
+}
+.news .col:last-child{
+    background-color: var(--color-green) ;
+    padding-top: 150px !important;
+}
+@media (min-width:1199px) {
+    .news .col h2{
+        font-size: 25px !important;
+    }
+    
+}
+.news .col h2{
+    font-size: 20px ;
+}
+/* End News */
+
+/* Start form */
+.form{
+    background-color: var(--color-whiteSmoke);
+    clip-path:  polygon(0 0, 100% 5%, 100% 100%, 0% 100%);
+}
+.form input,.form textarea{
+    border: 3px solid var(--color-black);
+    outline: none;
+    padding: 6px;
+    font-size: 18px;
+    font-weight: bolder;
+    transition: 0.3s;
+}
+.form input:focus,.form textarea:focus{
+    outline: 3px solid #86b7fe;
+    border: 3px solid #65a1fc;
+    box-shadow: 0 0 2px #65a1fc;
+}
+.form textarea{
+    height: 200px;
+    resize: none;
+}
+.form .option input{
+    height: 26px;
+    width: 61px;
+}
+.form .option input:checked{
+    box-shadow: 0 0 10px #65a1fc;
+}
+.form form button{
+    border-color: var(--color-black) !important;
+    color: var(--color-black);
+}
+/* End form */
+
+
+/* Start ACCREDITATIONS */
+.accreditations{
+    background-color: var(--color-whiteSmoke);
+}
+.accreditations h2{
+    color: var(--color-green);
+}
+/* End ACCREDITATIONS */
+
+
+
+/* Start footer */
+footer{
+    background-image: url(images/footer.png);
+
+}
+/* End footer */
+
+/* Start Components */
+
+button.btn{
+    border: 3px solid white;
+    color: white;
+    padding: 15px 60px;
+}
+button.btn:hover{
+    color: white;
+}
+a{
+    font-weight: bolder;
+}
+ul{
+    list-style: none;
+    padding: 0 !important;
+}
+/* End Components */
